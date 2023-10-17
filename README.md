@@ -13,3 +13,7 @@
 ![image](https://github.com/dylee0907/High_Level_Synthesis/assets/79738681/2b2e3c80-cfa3-4b2c-9f45-df8b3af3225b)
 
 #Abstract
+하드웨어의 궁극적인 목표는 본 기기에서 돌아가는 소프트웨어 실행 속도의 가속화이다. 소프트웨어 실행의 가속화라는 것은 하드웨어를 효율적으로 활용하여 경우에 따른 데이터 call in과 call back 및 computation을 적은 파워 소모를 통해 행하는 것을 지칭한다.
+이런 요구를 충족하면서 값이 저렴한 반도체 칩인 ASIC은 아키텍처가 고정되어 있기 때문에 다양한 소프트웨어를 실행하는데 한계가 있다. 또한 ASIC을 만들어본 사람들은 알겠지만 그 과정이 정말 주옥같기 때문에 다른 방법으로 효율적인 하드웨어를 구현하는 것이 더 이득일 수 있다. (하지만 아직은 ASIC을 만드는게 최선이긴 하다. 이유는 뒤에서 설명)
+따라서, 엔지니어들은 Reconfigurable한 FPGA와 기존의 CPU를 결합한 Heterogeneous computing system을 활용하려고 한다. 
+대부분의 프로그램이 실행되는 CPU를 사용하면서 computation weight가 큰 연산은 FPGA로 가속하는 하드웨어를 구현하는데 .
