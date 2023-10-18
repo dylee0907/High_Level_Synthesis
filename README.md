@@ -38,7 +38,7 @@ Code partitioning, optimization, design space exploration 또한 아직 미해�
 " Heterogeneous computing is a promising approach in which a group of processing nodes execute a workload in parallel. Given different kinds of nodes including multi-core CPUs, real-time processors, DSPs, GPUs, and accelerators on FPGAs or ASICs, the computing workload can be partitioned such that each part is executed on a processor that is well-matched to its requirements and the performance optimisation goals".
 
 
-이 문장이 본 논문의 내용을 요약해준다고 생각한다. 
+이 문장이 본 논문의 내용을 정확히 요약해준다. 
 
 사실 우리가 수동으로 프로세서의 종류에 맞춰 프로그램 수행 역할을 부여해도 효율적인 하드웨어 운용과 빠른 소프트웨어 실행을 할 수 있다.
 
