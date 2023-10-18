@@ -118,6 +118,7 @@ OpenCl SDK는 멀티코어를 이용하여 여러개의 thread를 통해 병렬 
 Vivado HLS와 같이 사용 가능한 IP를 제공하며 생성된 RTL에 맞춰 testbench 검증 또한 제공된다.
 
 #Thoughts
+
 아무리 봐도 아직은 verilog를 이용한 하드웨어 코딩이 HLS를 사용하는 방식보다 편한 부분이 있다.
 결국 우리가 HLS로 돌아서려는 이유도 컴퓨터 소프트웨어 코딩으로 쉽게 구현이 가능한 AI의 backpropagation, DFT 등의 알고리즘을
 하드웨어로 구현하기 어렵기 때문(정확히 말하면 귀찮기 때문)이지만 tool을 사용해 변환하는 과정이 너무 귀찮다.
