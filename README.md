@@ -82,7 +82,6 @@ HLS를 사용하는 방법에는 크게 3가지가 있다.
 Parsing~CDFG는 tool 알아서 해주는 과정이므로 설명은 생략한다.
 
 Flow에서 Allocation은 design library에서 해당 코드의 동작에 대응되는 cell을 불러오는 과정이다.
-
 (해당 방법은 Primelib을 통해 새로운 cell을 제작할때 characterization 단계에서 cell을 import하는 방식과 매우 유사하다. PTSD오는 과정이다.)
 
 Scheduling은 시스템의 clk cycle에 맞춰 control step을 정의하고
