@@ -76,12 +76,17 @@ HLS를 사용하는 방법에는 크게 3가지가 있다.
 ![image](https://github.com/dylee0907/High_Level_Synthesis/assets/79738681/8be9fd14-fd86-49a0-bff8-d419f56a1c7e)
 
 위 그림은 HLS design flow를 나타낸다.
-참고로 모든 HLL이 합성 가능한 형태는 아니다. 
+참고로 모든 HLL이 합성 가능한 형태는 아니다.
+
 현재 HLS tool은 pointer, recursion, 동적할당과 같은 기능을 하드웨어로 구현할 수 없기 때문에 이와 같은 기능은 지양하며 코드를 구현해야 합성이 가능하다.
+
 Parsing~CDFG는 tool 알아서 해주는 과정이므로 설명은 생략한다.
+
 Flow에서 Allocation은 design library에서 해당 코드의 동작에 대응되는 cell을 불러오는 과정이다.
+
 Scheduling은 시스템의 clk cycle에 맞춰 control step을 정의하고
 Resource Binding은 시스템에서 연산 수행 타이밍과 데이터 전송 타이밍을 결정하는 과정이다.
+
 마지막으로 RTL generate 단계를 통해 엔지니어가 요구하는 RTL을 출력하게 된다.
 
 
