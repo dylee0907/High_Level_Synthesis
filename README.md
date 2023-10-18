@@ -97,6 +97,7 @@ FPGA synthesis를 위한 Behavioural Approach 종류와 제공되는 기능을 �
 (FPGA의 양대 산맥인 두 회사가 가장 훌륭한 tool을 제공한다.)
 
 #Vivado HLS
+
 Vivado HLS는 합성 가능한 C, C++, SystemC, OpenCL HLL code로부터 Verilog와 VHDL을 통한 RTL 구현이 가능한 tool이다.
 아무래도 회사에서 제공하는 툴이기 때문에 tool 내부의 작동 방식은 기밀이지만 Xilinx에서 AutoPilot tool을 사버린 후 나온 tool이기 때문에 동작 방식은 AutoPilot과 유사할 것을 추축된다.
 
