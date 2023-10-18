@@ -93,4 +93,38 @@ Resource Binding은 시스템에서 연산 수행 타이밍과 데이터 전송 
 FPGA synthesis를 위한 Behavioural Approach 종류와 제공되는 기능을 아래 사진으로 확인할 수 있다.
 ![image](https://github.com/dylee0907/High_Level_Synthesis/assets/79738681/913a92c7-1b34-4b59-85c5-a3295f267995)
 
+보이는바와 같이 현재는 Vivado HLS가 가장 다양한 기능을 제공하며 그 다음으로는 Intel FPGA SDK for OpenCL과 Intel HLS compiler이 뒤따르는 것이 보인다.
+(FPGA의 양대 산맥인 두 회사가 가장 훌륭한 tool을 제공한다.)
 
+#Vivado HLS
+Vivado HLS는 합성 가능한 C, C++, SystemC, OpenCL HLL code로부터 Verilog와 VHDL을 통한 RTL 구현이 가능한 tool이다.
+아무래도 회사에서 제공하는 툴이기 때문에 tool 내부의 작동 방식은 기밀이지만 Xilinx에서 AutoPilot tool을 사버린 후 나온 tool이기 때문에 동작 방식은 AutoPilot과 유사할 것을 추축된다.
+
+논문에 그 방식이 설명되어있지만 딱히 필요 없으므로 생략한다.
+아래 그림을 참고하면 된다.
+![image](https://github.com/dylee0907/High_Level_Synthesis/assets/79738681/259997ba-2da0-4fa5-a045-1b3ff4e03e2f)
+
+
+#INTEL FPGA SDK FOR OpenCL
+
+이 tool은 OpenCL을 verilog RTL로 변환해준다.
+OpenCL은 프로세서, GPU, FPGA를 포함한 이종 플랫폼을 위한 병렬 애플리케이션 프로그래밍 프레임워크이다.
+OpenCl SDK는 멀티코어를 이용하여 여러개의 thread를 통해 병렬 연산을 실행하는 대신 FPGA에서 파이프라이닝을 통해 연산을 진행한다.
+
+#INTEL HLS COMPILER
+
+이 tool은 C++로 작성된 코드를 RTL로 변환한다.
+컴파일러가 loop unrolling, data dependency, pipelining을 엔지니어가 제공한 코드에 맞춰 구현한다.
+Vivado HLS와 같이 사용 가능한 IP를 제공하며 생성된 RTL에 맞춰 testbench 검증 또한 제공된다.
+
+#Thoughts
+아무리 봐도 아직은 verilog를 이용한 하드웨어 코딩이 HLS를 사용하는 방식보다 편한 부분이 있다.
+결국 우리가 HLS로 돌아서려는 이유도 컴퓨터 소프트웨어 코딩으로 쉽게 구현이 가능한 AI의 backpropagation, DFT 등의 알고리즘을
+하드웨어로 구현하기 어렵기 때문(정확히 말하면 귀찮기 때문)이지만 tool을 사용해 변환하는 과정이 너무 귀찮다.
+
+차라리 머리를 좀 더 써서 하드웨어 아키텍처를 구현하는게 낫지 않을까 싶다. 
+새로 아키텍처 만들면 저널급 논문도 하나 나올텐데...
+
+물론 tool을 세팅하는 과정만 지나면 쓸만하겠지만 대부분 제공되는 user manual이 너무 개판이고 기본적으로 600장이 넘어가기 때문에 그걸 다 읽어보기가 거부감이 든다.
+
+HLS 공부는...내년의 내가 알아서 할꺼라고 믿는다.
