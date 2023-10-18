@@ -71,6 +71,8 @@ HLS를 사용하는 방법에는 크게 3가지가 있다.
 
 앞서 말했듯이 사실상 2a 방법을 제외하고 나머지 방식은 기능적으로 한계가 많다.
 따라서, 2a 방법을 위주로 HLS를 설명하고자 한다.
+
+
 ![image](https://github.com/dylee0907/High_Level_Synthesis/assets/79738681/8be9fd14-fd86-49a0-bff8-d419f56a1c7e)
 
 위 그림은 HLS design flow를 나타낸다.
